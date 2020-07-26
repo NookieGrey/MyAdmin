@@ -1,0 +1,33 @@
+.public-layout {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .public-layout-inner {
+    padding: 20px;
+    min-width: 200px;
+  }
+
+    @media screen and (min-width: 600px) {
+    background: url(./public_bg_1200_750.jpg) 50% 0 no-repeat;
+    background-size: cover;
+
+
+    .public-layout-inner {
+      width: 50%;
+      background: #fff;
+      padding: 40px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: url(./public_bg_1920_1200.jpg) 50% 0 no-repeat;
+    background-size: cover;
+
+    .public-layout-inner {
+      width: 30%;
+      padding: 40px;
+    }
+  }
+}
