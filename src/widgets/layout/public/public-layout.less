@@ -7,10 +7,28 @@
   .public-layout-inner {
     padding: 20px;
     min-width: 200px;
+
+    .title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .text {
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: center;
+      white-space: pre-wrap;
+    }
+
+    .submit-button-wrapper {
+      padding-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
     @media screen and (min-width: 600px) {
-    background: url(./public_bg_1200_750.jpg) 50% 0 no-repeat;
+    background: url(public_bg_1200_750.jpg) 50% 0 no-repeat;
     background-size: cover;
 
 
@@ -22,7 +40,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background: url(./public_bg_1920_1200.jpg) 50% 0 no-repeat;
+    background: url(public_bg_1920_1200.jpg) 50% 0 no-repeat;
     background-size: cover;
 
     .public-layout-inner {

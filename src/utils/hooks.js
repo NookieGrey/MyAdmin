@@ -5,13 +5,13 @@ import {shallowEqual, useDispatch, useSelector} from "react-redux";
 import qs from "query-string";
 import {notification} from "antd";
 
-export function useAction(options) {
+export function useAPI(options) {
   const dispatch = useDispatch();
 
   return function (data) {
     if (options.init) dispatch(options.init(data));
 
-    return options.api(data)
+    return options.method(data)
       .then(response => {
         if (options.success) dispatch(options.success(response.data));
 
@@ -21,7 +21,7 @@ export function useAction(options) {
         if (options.fail) dispatch(options.fail(error));
 
         notification.error({
-          message: error.response.data.message
+          message: error.response?.data.message || error.message
         });
 
         throw error;

@@ -13,6 +13,7 @@ export function Button(props) {
         type={props.type || "primary"}
         htmlType={props.htmlType}
         className={props.className}
+        loading={props.loading}
       >
         {props.children}
       </AntdButton>

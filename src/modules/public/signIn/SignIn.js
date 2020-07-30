@@ -4,7 +4,7 @@ import React from "react";
 
 import {UserOutlined, LockOutlined} from '@ant-design/icons';
 
-import {PublicLayout} from "../../../widgets/layout/PublicLayout";
+import {PublicLayout} from "../../../widgets/layout/public/PublicLayout";
 import {Button, Form, Input} from "../../../widgets/formik";
 
 import {useSignIn} from "../../auth/redux/authHooks";

@@ -15,11 +15,11 @@ export function AuthControl(props) {
 
   const {pathname} = useLocation();
 
-  const rootRoute = pathname === '/';
+  const rootRoute = pathname === routes.ROOT_ROUTE;
+  const globalRoute = new RegExp(`^(${routes.GLOBAL_ROUTES.join("|")})$`).test(pathname);
   const publicRoute = new RegExp(`^(${routes.PUBLIC_ROUTES.join("|")})$`).test(pathname);
   const adminRoute = new RegExp(`^${routes.ADMIN_ROUTE}`).test(pathname);
   const userRoute = new RegExp(`^${routes.USER_ROUTE}`).test(pathname);
-  const globalRoute = new RegExp(`^(${routes.GLOBAL_ROUTES.join("|")})$`).test(pathname);
 
   if (error) throw error;
 
@@ -28,9 +28,10 @@ export function AuthControl(props) {
   if (globalRoute) return props.children;
 
   if (!role) {
+    if (adminRoute || userRoute || rootRoute) return <Redirect to={routes.SIGN_IN_ROUTE}/>;
     if (publicRoute) return props.children;
 
-    return <Redirect to={routes.SIGN_IN_ROUTE}/>;
+    return <Redirect to="/404"/>;
   }
 
   //normal flow
