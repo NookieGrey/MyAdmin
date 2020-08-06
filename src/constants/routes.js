@@ -20,5 +20,10 @@ export const PUBLIC_ROUTES = [
 
 export const ADMIN_ROUTE = "/admin";
 export const DASHBOARD_ROUTE = "/dashboard";
+export const EMPLOYEE_ROUTE = "/employee";
+export const PERMISSION_ROUTE = "/permission";
+export const GOODS_ROUTE = "/goods";
+export const PRICE_ROUTE = "/price";
+export const CALLS_ROUTE = "/calls";
 
 export const USER_ROUTE = "/user";

@@ -1,5 +1,3 @@
-import {useCallback} from "react";
-import {useDispatch} from "react-redux";
 import {useAsync, useAsyncCallback} from "react-async-hook";
 import {push} from "connected-react-router";
 
@@ -10,12 +8,6 @@ import {forgotPasswordApi, getProfileApi, resetPasswordApi, signInApi, signUpApi
 import {authActions} from "./authSlice";
 
 import * as routes from "../../../constants/routes";
-
-export function useSignOut() {
-  const dispatch = useDispatch();
-
-  return useCallback(() => dispatch(authActions.signOut()), [dispatch])
-}
 
 function useGetProfile() {
   return useAPI({

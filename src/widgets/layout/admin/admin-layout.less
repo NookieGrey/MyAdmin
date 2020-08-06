@@ -1,0 +1,85 @@
+.admin-layout {
+  .admin-layout-sider {
+    background: transparent;
+
+    .logo {
+      height: 56px;
+      padding-top: 8px;
+
+      &:before {
+        content: "MyAdmin";
+        background: #00b8ff;
+        color: #fff;
+        line-height: 48px;
+        margin-left: 8px;
+        transition: all 0.2s;
+        width: 112px;
+        padding-left: 24px;
+        display: block;
+        overflow: hidden;
+      }
+
+      &.collapsed {
+        &:before {
+          width: 0;
+          padding-left: 0;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    .ant-layout-sider-trigger {
+      top: 8px;
+      left: 128px;
+      width: 64px !important;
+      background: #00415a;
+    }
+
+    &.ant-layout-sider-collapsed {
+      .ant-layout-sider-trigger {
+        left: 8px;
+      }
+
+      .ant-menu-item {
+        padding: 0 24px;
+      }
+    }
+  }
+
+  .admin-layout-header {
+    padding: 0;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .admin-layout-body {
+
+  }
+
+  .admin-layout-footer {
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+    background: #00415a;
+    margin: 8px;
+  }
+
+  .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+
+    .ant-menu-item {
+      margin: 8px;
+    }
+  }
+
+  .admin-layout-ava-dropdown {
+    height: 48px;
+    background: #00b8ff;
+    margin-top: 8px;
+    margin-right: 8px;
+  }
+}
+
+
