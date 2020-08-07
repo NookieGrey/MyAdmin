@@ -7,5 +7,11 @@ const instance = axios.create({
 });
 
 export function http(options) {
-  return instance.request(options);
+  return instance.request({
+    ...options,
+    headers: {
+      token: localStorage.getItem("token") || "",
+      ...options.headers
+    }
+  });
 }

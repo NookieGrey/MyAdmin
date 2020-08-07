@@ -22,7 +22,7 @@ export function useRole() {
   const {loading, error} = useAsync(() => {
     const token = localStorage.getItem("token");
 
-    if (token) return getProfile({token});
+    if (token) return getProfile();
   }, []);
 
   const role = useReduxState(state => state.auth.user?.role);
@@ -37,7 +37,7 @@ function useCallProfile() {
     localStorage.setItem("token", payload.token);
 
     return dispatch => {
-      return getProfile(payload);
+      return getProfile();
     }
   }
 }
