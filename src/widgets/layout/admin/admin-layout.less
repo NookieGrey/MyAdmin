@@ -85,4 +85,28 @@
   }
 }
 
+.admin-layout-header {
+  margin-right: 0;
+}
 
+.admin-layout-body {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .admin-layout-right {
+    transition: all 0.2s;
+
+    &.moved {
+      overflow: hidden;
+
+      .admin-layout-header {
+        margin-right: -120px;
+      }
+
+      .admin-layout-body {
+        margin-right: -120px;
+      }
+    }
+  }
+}

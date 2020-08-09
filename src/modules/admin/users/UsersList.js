@@ -1,6 +1,7 @@
 import React from 'react';
 
-import {Table, Pagination} from "antd";
+import {Table, Pagination, Dropdown} from "antd";
+import {MoreOutlined} from '@ant-design/icons';
 
 import {Button} from "../../../widgets/formik";
 
@@ -30,27 +31,47 @@ export function UsersList() {
       title: 'Role',
       dataIndex: 'role',
       key: 'role',
+      responsive: ["sm"],
     },
     {
       title: 'Actions',
       dataIndex: 'id',
       key: 'action',
       align: "right",
-      render: id => (
-        <div className="table-list-buttons">
-          <Button
-            to={routes.ADMIN_ROUTE + routes.EMPLOYEE_ROUTE + routes.EDIT_ROUTE + "/" + id}
-          >
-            Edit
-          </Button>
-          <Button
-            type="danger"
-            onClick={() => onDelete(id)}
-          >
-            Delete
-          </Button>
-        </div>
-      )
+      render: id => {
+        const buttons = (
+          <>
+            <Button
+              to={routes.ADMIN_ROUTE + routes.EMPLOYEE_ROUTE + routes.EDIT_ROUTE + "/" + id}
+            >
+              Edit
+            </Button>
+            <Button
+              type="danger"
+              onClick={() => onDelete(id)}
+            >
+              Delete
+            </Button>
+          </>
+        )
+        
+        return (
+          <>
+            <Dropdown
+              overlay={buttons}
+              trigger={['click']}
+              className="table-list-dropdown"
+            >
+              <Button type="link" onClick={e => e.preventDefault()}>
+                <MoreOutlined/>
+              </Button>
+            </Dropdown>
+            <div className="table-list-buttons">
+              {buttons}
+            </div>
+          </>
+        )
+      }
     },
   ];
   

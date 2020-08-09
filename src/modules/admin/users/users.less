@@ -21,12 +21,29 @@
   }
 
   .body {
-    width: 50%;
     margin: 8px auto 0;
   }
 
   .submit-button-wrapper {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .user-edit-page {
+
+    .body {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .user-edit-page {
+
+    .body {
+      width: 33%;
+    }
   }
 }

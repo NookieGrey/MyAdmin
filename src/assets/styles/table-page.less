@@ -48,7 +48,10 @@
   }
 
   .table-list-buttons {
-    a, .ant-btn + a, .ant-btn {
+    display: none;
+    white-space: nowrap;
+
+    a + .ant-btn, .ant-btn + a, .ant-btn + .ant-btn, a + a {
       margin-left: 8px;
     }
   }
@@ -61,5 +64,17 @@
 
   .table-pagination {
     margin: 10px 0 0 auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .table-page {
+    .table-list-dropdown {
+      display: none;
+    }
+
+    .table-list-buttons {
+      display: block;
+    }
   }
 }

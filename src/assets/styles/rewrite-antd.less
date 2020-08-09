@@ -11,3 +11,16 @@ ul.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
   }
 }
 
+.ant-dropdown {
+  display: flex;
+  flex-direction: column;
+
+  a, .ant-btn {
+    width: 100%;
+  }
+
+  a + .ant-btn, .ant-btn + a, .ant-btn + .ant-btn, a + a {
+    margin-top: 8px;
+  }
+}
+

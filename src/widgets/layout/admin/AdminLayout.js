@@ -63,7 +63,7 @@ export function AdminLayout(props) {
             </Menu.Item>
           </Menu>
         </Layout.Sider>
-        <Layout>
+        <Layout className={`admin-layout-right${collapsed ? "" : " moved"}`}>
           <Layout.Header className="admin-layout-header">
             <Dropdown overlay={<SettingsMenu/>} className="admin-layout-ava-dropdown">
               <img src={ava} alt=""/>
