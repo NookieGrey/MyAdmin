@@ -7,13 +7,17 @@ import {isPC} from "../../utils/screenSize";
 
 export function Button(props) {
   return (
-    <Link to={props.to}>
+    <Link
+      to={props.to}
+      className={props.linkClassName}
+    >
       <AntdButton
         size={!isPC() && "large"}
         type={props.type || "primary"}
         htmlType={props.htmlType}
         className={props.className}
         loading={props.loading}
+        onClick={props.onClick}
       >
         {props.children}
       </AntdButton>
@@ -23,9 +27,12 @@ export function Button(props) {
 
 function Link(props) {
   if (!props.to) return props.children;
-
+  
   return (
-    <RouterLink to={props.to}>
+    <RouterLink
+      className={props.className}
+      to={props.to}
+    >
       {props.children}
     </RouterLink>
   )

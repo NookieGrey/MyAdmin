@@ -3,16 +3,17 @@ import "./simple-page.less";
 import React from 'react';
 
 import {Button} from "../../../formik";
+import {PublicLayout} from "../PublicLayout";
 
 import * as routes from "../../../../constants/routes";
 
 export function SimplePage(props) {
   return (
-    <>
+    <PublicLayout>
       <Title title={props.title}/>
       <Text text={props.text}/>
       <MainPageButton show={props.showMainPageButton}/>
-    </>
+    </PublicLayout>
   );
 }
 

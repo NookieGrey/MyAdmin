@@ -26,4 +26,9 @@ export const GOODS_ROUTE = "/goods";
 export const PRICE_ROUTE = "/price";
 export const CALLS_ROUTE = "/calls";
 
+export const LIST_ROUTE = "/list";
+export const EDIT_ROUTE = "/edit";
+export const VIEW_ROUTE = "/view";
+export const ID_ROUTE = "/:id";
+
 export const USER_ROUTE = "/user";

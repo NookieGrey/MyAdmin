@@ -4,7 +4,9 @@ import {Redirect, Route, Switch} from "react-router-dom";
 
 import SimpleAdminPage from "../../widgets/layout/admin/SimpleAdminPage";
 import {AdminLayout} from "../../widgets/layout/admin/AdminLayout";
+
 import {DashboardModule} from "./dashboard/DashboardModule";
+import {UsersModule} from "./users/UsersModule";
 
 import * as routes from "../../constants/routes";
 
@@ -17,7 +19,7 @@ export function AdminRoutes(props) {
     <AdminLayout>
       <Switch>
         <Route path={props.match.path + routes.DASHBOARD_ROUTE} component={DashboardModule} exact/>
-        <Route path={props.match.path + routes.EMPLOYEE_ROUTE} component={SimpleAdminPage} exact/>
+        <Route path={props.match.path + routes.EMPLOYEE_ROUTE} component={UsersModule}/>
         <Route path={props.match.path + routes.PERMISSION_ROUTE} component={SimpleAdminPage} exact/>
         <Route path={props.match.path + routes.GOODS_ROUTE} component={SimpleAdminPage} exact/>
         <Route path={props.match.path + routes.PRICE_ROUTE} component={SimpleAdminPage} exact/>

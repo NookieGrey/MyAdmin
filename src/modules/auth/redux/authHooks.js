@@ -45,12 +45,12 @@ function useCallProfile() {
 export function useSignIn() {
   const callProfile = useCallProfile();
 
-  const signInAction = useAPI({
+  const signIn = useAPI({
     method: signInApi,
     success: callProfile
   })
 
-  const {execute: onSignIn, loading, error} = useAsyncCallback(signInAction);
+  const {execute: onSignIn, loading, error} = useAsyncCallback(signIn);
 
   return {onSignIn, loading, error};
 }
@@ -58,19 +58,19 @@ export function useSignIn() {
 export function useSignUp() {
   const callProfile = useCallProfile();
 
-  const signUpAction = useAPI({
+  const signUp = useAPI({
     method: signUpApi,
     success: callProfile
   })
 
-  const {execute: onSignUp, loading, error} = useAsyncCallback(signUpAction);
+  const {execute: onSignUp, loading, error} = useAsyncCallback(signUp);
 
   return {onSignUp, loading, error};
 }
 
 export function useForgotPassword() {
 
-  const forgotPasswordAction = useAPI({
+  const forgotPassword = useAPI({
     method: forgotPasswordApi,
     success: forgotPasswordSuccess
   })
@@ -81,14 +81,14 @@ export function useForgotPassword() {
     }
   }
 
-  const {execute: onForgotPassword, loading, error} = useAsyncCallback(forgotPasswordAction);
+  const {execute: onForgotPassword, loading, error} = useAsyncCallback(forgotPassword);
 
   return {onForgotPassword, loading, error};
 }
 
 export function useResetPassword() {
 
-  const resetPasswordAction = useAPI({
+  const resetPassword = useAPI({
     method: resetPasswordApi,
     success: resetPasswordSuccess
   })
@@ -99,7 +99,7 @@ export function useResetPassword() {
     }
   }
 
-  const {execute: onResetPassword, loading, error} = useAsyncCallback(resetPasswordAction);
+  const {execute: onResetPassword, loading, error} = useAsyncCallback(resetPassword);
 
   return {onResetPassword, loading, error};
 }
