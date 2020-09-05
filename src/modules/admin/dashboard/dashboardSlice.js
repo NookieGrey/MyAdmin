@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-export const reducerName = "dashboard";
+export const name = "dashboard";
 
 export const initialState = {
   calls: [],
@@ -9,7 +9,7 @@ export const initialState = {
 };
 
 const reducers = {
-  getDashboard: (state, action) => {
+  getDashboard(state, action) {
     state.calls = action.payload.calls.map(item => ({x: item.type, y: item.count}));
     state.goods = action.payload.goods.map(item => ({x: item.type, y: item.count}));
     
@@ -30,5 +30,5 @@ const reducers = {
 export const {reducer, actions: dashboardActions} = createSlice({
   initialState,
   reducers,
-  name: reducerName
+  name
 });

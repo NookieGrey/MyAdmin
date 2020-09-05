@@ -6,15 +6,15 @@ export function getListApi(page) {
   });
 }
 
-export function getItemApi(data) {
+export function getItemApi(id) {
   return http({
-    url: `/users/item/${data.id}`
+    url: `/users/item/${id}`
   });
 }
 
 export function saveItemApi(data) {
   return http({
-    url: `/users/item/${data.id || 0}`, //eslint-disable-line
+    url: `/users/item`,
     method: "POST",
     data,
   });
@@ -22,7 +22,7 @@ export function saveItemApi(data) {
 
 export function deleteItemApi(id) {
   return http({
-    url: `/users/item/${id}`, //eslint-disable-line
+    url: `/users/item/${id}`,
     method: "DELETE",
   });
 }

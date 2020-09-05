@@ -5,7 +5,7 @@ import {Form} from "antd";
 import {Loader} from "../../../widgets/loader/Loader";
 import {Button} from "../../../widgets/formik";
 
-import {useGetItem} from "./redux/usersHooks";
+import {useGetItem} from "./usersHooks";
 
 import * as routes from "../../../constants/routes";
 

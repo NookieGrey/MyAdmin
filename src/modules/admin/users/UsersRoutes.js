@@ -10,9 +10,7 @@ import {UsersEdit} from "./UsersEdit";
 
 import * as routes from "../../../constants/routes";
 
-export const moduleName = "UserRoutes";
-
-export function UserRoutes(props) {
+export default function UserRoutes(props) {
   if (props.match.isExact) return <Redirect to={props.match.path + routes.LIST_ROUTE}/>
   
   return (

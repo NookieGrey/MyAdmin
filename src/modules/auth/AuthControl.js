@@ -8,7 +8,7 @@ import {useLocation} from "react-router";
 
 import * as routes from "../../constants/routes";
 import {ADMIN_ROLE, USER_ROLE} from "../../constants/roles";
-import {useRole} from "./redux/authHooks";
+import {useRole} from "./authHooks";
 
 export function AuthControl(props) {
   const {role, error, loading} = useRole();

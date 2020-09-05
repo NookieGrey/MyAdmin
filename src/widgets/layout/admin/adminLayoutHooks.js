@@ -1,15 +1,14 @@
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {push} from "connected-react-router";
 
 import {useLocation} from "react-router";
-import {useReduxState} from "../../../utils/hooks";
 import {baseServerUrl} from "../../../constants/server";
 
 import * as routes from "../../../constants/routes";
 
 import noAva from "./no-avatar.jpg";
 import {useCallback} from "react";
-import {authActions} from "../../../modules/auth/redux/authSlice";
+import {authActions} from "../../../modules/auth/authSlice";
 
 export function useMenuSelect() {
     const dispatch = useDispatch();
@@ -27,7 +26,7 @@ export function useActivePage() {
 }
 
 export function useAva() {
-    const ava = useReduxState(state => state.auth.user?.ava);
+    const ava = useSelector(state => state.auth.user?.ava);
 
     if (!ava) return noAva;
     
@@ -41,5 +40,5 @@ export function useSignOut() {
         dispatch(authActions.signOut());
         
         localStorage.removeItem("token");
-    }, [dispatch])
+    }, [dispatch]);
 }

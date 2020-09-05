@@ -6,17 +6,17 @@ import {UserOutlined} from '@ant-design/icons';
 
 import {Button, Form, Input} from "../../../widgets/formik";
 
-import {useForgotPassword} from "../../auth/redux/authHooks";
+import {useForgotPassword} from "../publicHooks";
 
 export function ForgotPassword() {
-  const {onForgotPassword, loading} = useForgotPassword();
+  const {execute, loading} = useForgotPassword();
   
   return (
     <Form
       initialValues={{
         login: ""
       }}
-      onSubmit={onForgotPassword}
+      onSubmit={execute}
     >
       <h1 className="title forgot-password-title">Forgot your Password?</h1>
       <div className="text">

@@ -3,7 +3,7 @@ import React from 'react';
 import {Loader} from "../../../widgets/loader/Loader";
 import {Button, Form, Input, Select} from "../../../widgets/formik";
 
-import {useGetItem, useSaveItem} from "./redux/usersHooks";
+import {useGetItem, useSaveItem} from "./usersHooks";
 
 import * as routes from "../../../constants/routes";
 
@@ -11,7 +11,7 @@ export function UsersEdit(props) {
   const id = +props.match.params.id;
   const {item, loading} = useGetItem(id);
   
-  const {onSave, loading: loadingSave} = useSaveItem();
+  const {execute, loading: loadingSave} = useSaveItem();
   
   if (loading) return <Loader/>;
   
@@ -25,7 +25,7 @@ export function UsersEdit(props) {
       </div>
       <div className="body">
         <Form
-          onSubmit={({name, role}) => onSave({name, role, id})}
+          onSubmit={({name, role}) => execute({name, role, id})}
           initialValues={item}
         >
           <Input

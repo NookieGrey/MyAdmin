@@ -11,9 +11,7 @@ import {ResetPassword} from "./resetPassword/ResetPassword";
 
 import * as routes from "../../constants/routes";
 
-export const moduleName = "PublicRoutes";
-
-export function PublicRoutes() {
+export default function PublicRoutes() {
   return (
     <PublicLayout>
       <Switch>

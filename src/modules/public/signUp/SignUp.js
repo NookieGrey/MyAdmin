@@ -4,11 +4,11 @@ import {UserOutlined, LockOutlined} from '@ant-design/icons';
 
 import {Button, Checkbox, Form, Input, Select} from "../../../widgets/formik";
 
-import {useSignUp} from "../../auth/redux/authHooks";
+import {useSignUp} from "../publicHooks";
 import {comparePasswords} from "../comparePasswords";
 
 export function SignUp() {
-  const {loading, onSignUp} = useSignUp();
+  const {loading, execute: onSignUp} = useSignUp();
   
   return (
     <Form

@@ -6,16 +6,16 @@ import {UserOutlined, LockOutlined} from '@ant-design/icons';
 
 import {Button, Form, Input} from "../../../widgets/formik";
 
-import {useSignIn} from "../../auth/redux/authHooks";
+import {useSignIn} from "../publicHooks";
 
 import * as routes from "../../../constants/routes";
 
 export function SignIn() {
-  const {onSignIn, loading: loadingSignIn} = useSignIn();
+  const {execute, loading} = useSignIn();
   
   return (
     <Form
-      onSubmit={onSignIn}
+      onSubmit={execute}
       initialValues={{login: "", password: ""}}
       className="sign-in-form"
     >
@@ -51,7 +51,7 @@ export function SignIn() {
       <div className="submit-button-wrapper">
         <Button
           htmlType="submit"
-          loading={loadingSignIn}
+          loading={loading}
         >
           Sign In
         </Button>

@@ -9,8 +9,8 @@ import { connectRouter, routerMiddleware } from "connected-react-router";
 
 import {
   reducer as authReducer,
-  reducerName as authReducerName
-} from "../modules/auth/redux/authSlice";
+  name as authname
+} from "../modules/auth/authSlice";
 import { development, logDebug } from "../utils/utils";
 
 export const history = createBrowserHistory();
@@ -30,7 +30,7 @@ export const store = configureStore({
 function createRootReducer(reducers) {
   return combineReducers({
     router: connectRouter(history),
-    [authReducerName]: authReducer,
+    [authname]: authReducer,
     ...reducers
   });
 }

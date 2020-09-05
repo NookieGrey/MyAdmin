@@ -3,12 +3,12 @@ import React from 'react';
 import {LockOutlined} from '@ant-design/icons';
 
 import {Button, Form, Input} from "../../../widgets/formik";
-import {useResetPassword} from "../../auth/redux/authHooks";
+import {useResetPassword} from "../publicHooks";
 import {comparePasswords} from "../comparePasswords";
 import {useQuery} from "../../../utils/hooks";
 
 export function ResetPassword() {
-  const {onResetPassword, loading} = useResetPassword();
+  const {execute, loading} = useResetPassword();
   const {token} = useQuery();
   
   return (
@@ -17,7 +17,7 @@ export function ResetPassword() {
         password: "",
         confirmPassword: "",
       }}
-      onSubmit={(password) => onResetPassword({password, token})}
+      onSubmit={(password) => execute({password, token})}
       validate={comparePasswords}
     >
       <h1 className="title forgot-password-title">Reset Password</h1>

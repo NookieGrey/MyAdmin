@@ -13,15 +13,15 @@ import {AllRoutes} from "../modules/AllRoutes";
 import {store, history} from "./store";
 
 export function Core() {
-    return (
-        <Provider store={store}>
-            <ConnectedRouter history={history}>
-                <ErrorBoundary>
-                    <AuthControl>
-                        <AllRoutes/>
-                    </AuthControl>
-                </ErrorBoundary>
-            </ConnectedRouter>
-        </Provider>
-    );
+  return (
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <ErrorBoundary>
+          <AuthControl>
+            <AllRoutes/>
+          </AuthControl>
+        </ErrorBoundary>
+      </ConnectedRouter>
+    </Provider>
+  );
 }

@@ -1,6 +1,6 @@
 import "./admin-layout.less";
 
-import React, {useState} from "react";
+import React, {useState, Suspense} from "react";
 
 import {Dropdown, Layout, Menu} from 'antd';
 import {
@@ -12,6 +12,8 @@ import {
   EuroOutlined,
   PhoneOutlined,
 } from '@ant-design/icons';
+
+import {Loader} from "../../loader/Loader";
 
 import {useActivePage, useAva, useMenuSelect, useSignOut} from "./adminLayoutHooks";
 import {isPC} from "../../../utils/screenSize";
@@ -70,7 +72,9 @@ export function AdminLayout(props) {
             </Dropdown>
           </Layout.Header>
           <Layout.Content className="admin-layout-body">
-            {props.children}
+            <Suspense fallback={<Loader/>}>
+              {props.children}
+            </Suspense>
           </Layout.Content>
         </Layout>
       </Layout>

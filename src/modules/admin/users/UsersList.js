@@ -5,13 +5,13 @@ import {MoreOutlined} from '@ant-design/icons';
 
 import {Button} from "../../../widgets/formik";
 
-import {useList, useDeleteItem} from "./redux/usersHooks";
+import {useList, useDeleteItem} from "./usersHooks";
 
 import * as routes from "../../../constants/routes";
 
 export function UsersList() {
   const {list, totalCount, current, loading, onUpdateList} = useList();
-  const {onDelete} = useDeleteItem();
+  const {onDelete} = useDeleteItem(() => onUpdateList(current));
   
   const columns = [
     {

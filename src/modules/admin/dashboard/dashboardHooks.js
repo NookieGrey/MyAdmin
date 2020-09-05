@@ -1,20 +1,21 @@
 import {useAsync} from "react-async-hook";
+import {useSelector} from "react-redux";
 
-import {useAPI, useReduxState} from "../../../../utils/hooks";
+import {useAPI} from "../../../utils/hooks";
 
-import {getDashboardApi} from "../../../../api/dashboardApi";
+import {getDashboardApi} from "../../../api/dashboardApi";
 
 import {dashboardActions} from "./dashboardSlice";
 
 export function useDashboard() {
   const getDashboard = useAPI({
-    method: getDashboardApi,
+    api: getDashboardApi,
     success: dashboardActions.getDashboard,
   });
 
   const {loading, error} = useAsync(getDashboard, []);
 
-  const {calls, goods, users} = useReduxState(state => state.dashboard);
+  const {calls, goods, users} = useSelector(state => state.dashboard);
 
   return {calls, goods, users, loading, error};
 }

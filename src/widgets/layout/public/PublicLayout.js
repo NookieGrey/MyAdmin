@@ -1,13 +1,15 @@
 import "./public-layout.less";
 
-import React from "react";
+import React, {Suspense} from "react";
+import {Loader} from "../../loader/Loader";
 
 export function PublicLayout(props) {
-
   return (
     <div className="public-layout">
       <div className="public-layout-inner">
-        {props.children}
+        <Suspense fallback={<Loader/>}>
+          {props.children}
+        </Suspense>
       </div>
     </div>
   )
