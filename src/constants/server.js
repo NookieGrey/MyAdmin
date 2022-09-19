@@ -1,1 +1,1 @@
-export const baseServerUrl = "http://localhost:8090";
+export const baseServerUrl = "https://h2ql2kkmsbcanvgqxs6cgv5x640bhrro.lambda-url.ap-northeast-1.on.aws";
