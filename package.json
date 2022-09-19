@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "cross-env EXTEND_ESLINT=true craco start",
-    "build": "craco build"
+    "build": "craco docs"
   },
   "eslintConfig": {
     "extends": [
@@ -57,7 +57,7 @@
     }
   },
   "eslintIgnore": [
-    "/build"
+    "/docs"
   ],
   "browserslist": {
     "production": [
