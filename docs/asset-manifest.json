@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/MyAdmin/static/css/main.fe1a5efa.chunk.css",
-    "main.js": "/MyAdmin/static/js/main.857430c5.chunk.js",
-    "main.js.map": "/MyAdmin/static/js/main.857430c5.chunk.js.map",
-    "runtime-main.js": "/MyAdmin/static/js/runtime-main.7a61f482.js",
-    "runtime-main.js.map": "/MyAdmin/static/js/runtime-main.7a61f482.js.map",
-    "static/css/2.249a6280.chunk.css": "/MyAdmin/static/css/2.249a6280.chunk.css",
+    "main.js": "/MyAdmin/static/js/main.75704c5b.chunk.js",
+    "main.js.map": "/MyAdmin/static/js/main.75704c5b.chunk.js.map",
+    "runtime-main.js": "/MyAdmin/static/js/runtime-main.3f6e5a27.js",
+    "runtime-main.js.map": "/MyAdmin/static/js/runtime-main.3f6e5a27.js.map",
+    "static/css/2.207fa54b.chunk.css": "/MyAdmin/static/css/2.207fa54b.chunk.css",
     "static/js/2.913d858b.chunk.js": "/MyAdmin/static/js/2.913d858b.chunk.js",
     "static/js/2.913d858b.chunk.js.map": "/MyAdmin/static/js/2.913d858b.chunk.js.map",
     "static/js/3.97a1e5b1.chunk.js": "/MyAdmin/static/js/3.97a1e5b1.chunk.js",
     "static/js/3.97a1e5b1.chunk.js.map": "/MyAdmin/static/js/3.97a1e5b1.chunk.js.map",
-    "static/css/4.63c3aedc.chunk.css": "/MyAdmin/static/css/4.63c3aedc.chunk.css",
+    "static/css/4.f89e9397.chunk.css": "/MyAdmin/static/css/4.f89e9397.chunk.css",
     "static/js/4.fca21be3.chunk.js": "/MyAdmin/static/js/4.fca21be3.chunk.js",
     "static/js/4.fca21be3.chunk.js.map": "/MyAdmin/static/js/4.fca21be3.chunk.js.map",
-    "static/css/5.1757c055.chunk.css": "/MyAdmin/static/css/5.1757c055.chunk.css",
+    "static/css/5.28548d6c.chunk.css": "/MyAdmin/static/css/5.28548d6c.chunk.css",
     "static/js/5.ff1b7daf.chunk.js": "/MyAdmin/static/js/5.ff1b7daf.chunk.js",
     "static/js/5.ff1b7daf.chunk.js.map": "/MyAdmin/static/js/5.ff1b7daf.chunk.js.map",
     "static/css/6.98f5dbea.chunk.css": "/MyAdmin/static/css/6.98f5dbea.chunk.css",
@@ -29,11 +29,11 @@
     "static/js/9.5523b6b7.chunk.js": "/MyAdmin/static/js/9.5523b6b7.chunk.js",
     "static/js/9.5523b6b7.chunk.js.map": "/MyAdmin/static/js/9.5523b6b7.chunk.js.map",
     "index.html": "/MyAdmin/index.html",
-    "precache-manifest.08cd4a19317397362375494b0994deea.js": "/MyAdmin/precache-manifest.08cd4a19317397362375494b0994deea.js",
+    "precache-manifest.7a2cee71cd652fb37f356196e9f32114.js": "/MyAdmin/precache-manifest.7a2cee71cd652fb37f356196e9f32114.js",
     "service-worker.js": "/MyAdmin/service-worker.js",
-    "static/css/2.249a6280.chunk.css.map": "/MyAdmin/static/css/2.249a6280.chunk.css.map",
-    "static/css/4.63c3aedc.chunk.css.map": "/MyAdmin/static/css/4.63c3aedc.chunk.css.map",
-    "static/css/5.1757c055.chunk.css.map": "/MyAdmin/static/css/5.1757c055.chunk.css.map",
+    "static/css/2.207fa54b.chunk.css.map": "/MyAdmin/static/css/2.207fa54b.chunk.css.map",
+    "static/css/4.f89e9397.chunk.css.map": "/MyAdmin/static/css/4.f89e9397.chunk.css.map",
+    "static/css/5.28548d6c.chunk.css.map": "/MyAdmin/static/css/5.28548d6c.chunk.css.map",
     "static/css/6.98f5dbea.chunk.css.map": "/MyAdmin/static/css/6.98f5dbea.chunk.css.map",
     "static/css/7.ecdda9f0.chunk.css.map": "/MyAdmin/static/css/7.ecdda9f0.chunk.css.map",
     "static/css/8.9b43ac92.chunk.css.map": "/MyAdmin/static/css/8.9b43ac92.chunk.css.map",
@@ -43,10 +43,10 @@
     "static/media/public-layout.less": "/MyAdmin/static/media/public_bg_1920_1200.a620a28e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7a61f482.js",
-    "static/css/2.249a6280.chunk.css",
+    "static/js/runtime-main.3f6e5a27.js",
+    "static/css/2.207fa54b.chunk.css",
     "static/js/2.913d858b.chunk.js",
     "static/css/main.fe1a5efa.chunk.css",
-    "static/js/main.857430c5.chunk.js"
+    "static/js/main.75704c5b.chunk.js"
   ]
 }

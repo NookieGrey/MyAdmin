@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a32a287135538e86783cc98ddb5dc611",
+    "revision": "bb61e2feef2f531748afe44b384a272b",
     "url": "/MyAdmin/index.html"
   },
   {
-    "revision": "2c5b4a78c966feaaf123",
-    "url": "/MyAdmin/static/css/2.249a6280.chunk.css"
+    "revision": "e8370f9214e50148d2a3",
+    "url": "/MyAdmin/static/css/2.207fa54b.chunk.css"
   },
   {
-    "revision": "93ca5f549b18d3224854",
-    "url": "/MyAdmin/static/css/4.63c3aedc.chunk.css"
+    "revision": "bd1afd64f996ffca744a",
+    "url": "/MyAdmin/static/css/4.f89e9397.chunk.css"
   },
   {
-    "revision": "74a0462e6e99fe5579b1",
-    "url": "/MyAdmin/static/css/5.1757c055.chunk.css"
+    "revision": "7e6e910db90561180b8b",
+    "url": "/MyAdmin/static/css/5.28548d6c.chunk.css"
   },
   {
     "revision": "473b82536558b6432067",
@@ -32,11 +32,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyAdmin/static/css/9.f794e3d2.chunk.css"
   },
   {
-    "revision": "60635f602f67e17d908c",
+    "revision": "669b3a6f812f29287048",
     "url": "/MyAdmin/static/css/main.fe1a5efa.chunk.css"
   },
   {
-    "revision": "2c5b4a78c966feaaf123",
+    "revision": "e8370f9214e50148d2a3",
     "url": "/MyAdmin/static/js/2.913d858b.chunk.js"
   },
   {
@@ -48,11 +48,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyAdmin/static/js/3.97a1e5b1.chunk.js"
   },
   {
-    "revision": "93ca5f549b18d3224854",
+    "revision": "bd1afd64f996ffca744a",
     "url": "/MyAdmin/static/js/4.fca21be3.chunk.js"
   },
   {
-    "revision": "74a0462e6e99fe5579b1",
+    "revision": "7e6e910db90561180b8b",
     "url": "/MyAdmin/static/js/5.ff1b7daf.chunk.js"
   },
   {
@@ -72,12 +72,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyAdmin/static/js/9.5523b6b7.chunk.js"
   },
   {
-    "revision": "60635f602f67e17d908c",
-    "url": "/MyAdmin/static/js/main.857430c5.chunk.js"
+    "revision": "669b3a6f812f29287048",
+    "url": "/MyAdmin/static/js/main.75704c5b.chunk.js"
   },
   {
-    "revision": "e55f24bd5014fa232205",
-    "url": "/MyAdmin/static/js/runtime-main.7a61f482.js"
+    "revision": "321692602b9d622ea0f8",
+    "url": "/MyAdmin/static/js/runtime-main.3f6e5a27.js"
   },
   {
     "revision": "99d2e29697552afc8aaee06150f2aa07",

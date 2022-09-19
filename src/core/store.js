@@ -13,7 +13,7 @@ import {
 } from "../modules/auth/authSlice";
 import { development, logDebug } from "../utils/utils";
 
-export const history = createBrowserHistory();
+export const history = createBrowserHistory({basename: "/MyAdmin"});
 
 const routeMiddleware = routerMiddleware(history);
 const middleware = [...getDefaultMiddleware(), routeMiddleware];

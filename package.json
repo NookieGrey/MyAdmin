@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "cross-env EXTEND_ESLINT=true craco start",
-    "build": "craco docs ./docs"
+    "build": "craco build"
   },
   "eslintConfig": {
     "extends": [
