@@ -2,6 +2,7 @@
   "name": "MyAdmin",
   "version": "0.2.0",
   "private": true,
+  "homepage": "https://nookiegrey.github.io/MyAdmin",
   "dependencies": {
     "@ant-design/icons": "4.2.2",
     "@craco/craco": "5.6.4",
@@ -28,7 +29,7 @@
   },
   "scripts": {
     "start": "cross-env EXTEND_ESLINT=true craco start",
-    "build": "craco docs"
+    "build": "craco docs ./docs"
   },
   "eslintConfig": {
     "extends": [
