@@ -2,7 +2,7 @@
 
 Simple example of working admin panel app
 
-to see demo, visit [GitHubPages](https://nookiegrey.github.io/MyAdmin/) (not works, ask to deploy, if needed)
+to see demo, visit [GitHubPages](https://nookiegrey.github.io/MyAdmin/) (backend isn't working, ask to deploy, if needed)
 
 credentials:  
 login: user@name.com  
